@@ -1,0 +1,18 @@
+{
+  "disabled": false,
+  "bindings": [
+    {
+      "name": "myTimer",
+      "type": "timerTrigger",
+      "direction": "in",
+      "schedule": "0 0 2 * * *"
+    },
+    {
+      "name": "mySbQueue",
+      "type": "serviceBus",
+      "direction": "out",
+      "queueName": "%SERVICEBUS_QUEUE_NAME%",
+      "connection": "SERVICEBUS_CONNECTION"
+    }
+  ]
+}
